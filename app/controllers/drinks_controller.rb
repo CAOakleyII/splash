@@ -13,6 +13,7 @@ include DrinksHelper
     drinks_response = DrinksHelper.search(options)
 
     drinks = []
+    p drinks_response.parsed_response
     drinks_response.parsed_response.each do |drink|
       drink_model = Drink.find_or_initialize_by(drink)
       drink_model.save()
