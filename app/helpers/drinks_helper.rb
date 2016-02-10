@@ -1,8 +1,8 @@
+require 'httparty'
 module DrinksHelper
-  include HTTParty
-  base_uri '104.236.235.221:6543'
 
-  def search(query)
-    self.class.get('/drinks', query: options)
+  def self.search(options)
+    p options
+    return HTTParty.get('http://localhost:6543/drinks', options);
   end
 end

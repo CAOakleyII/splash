@@ -1,18 +1,35 @@
 @import "materialize";
 @import "home";
+@import "drinks";
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,500,300);
 
 body{
   background-color: #fcfcfc;
+  background-image: url('/images/background_bar.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.content {
-  width:100%;
-  background-color: white;
-  position: absolute;
+#nav-bar {
+  box-shadow: black 10px 5px 15px !important;
+}
+.shade {
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
   top: 0;
   bottom: 0;
+  width: 100%;
+  z-index: -50;
+}
+.content {
+  color: white;
   z-index: -1;
-  box-shadow: rgb(209,209,209) 0px 1px 15px;
+  box-shadow: black 0px 1px 15px;
+  display: flex;
+  top: 15%;
+  position: absolute;
+  border-radius: 5px;
+  min-height: 400px;
+  margin-bottom: 50px;
 }
 .twitter-typeahead {
   width: 100%;
@@ -22,6 +39,7 @@ body{
   box-shadow: #c8c8c8 0px 1px 3px;
   padding: 15px;
   width: 100%;
+  color: black;
 }
 .tt-selectable{
   padding: 5px;

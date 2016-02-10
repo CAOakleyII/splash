@@ -3,11 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .header {
   margin: 15px 0;
+  padding-bottom: 50px;
+  font-family: 'Sonsie One', cursive;
+  font-size: 2.1rem;
 }
 .home {
   width: 100%;
 }
+
 .ingredient-list{
   margin-top: 5px;
   margin-bottom: 20px;
+  .chip {
+    margin: 0 7px;
+  }
 }

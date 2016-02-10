@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :drinks do
     collection do
       post 'search'
+      get  'show'
+      post 'show'
     end
   end
 

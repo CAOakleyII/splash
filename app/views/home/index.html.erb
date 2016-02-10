@@ -1,10 +1,9 @@
 <div class="home valign">
 
   <div class="header center-align">
-    <h3 class="grey-text text-darken-4">
-      Splash
-    </h4>
-    <p>...in a few ingredients</p>
+    <span class="white-text">
+      ingredients
+    </span>
   </div>
 
 
@@ -12,16 +11,16 @@
     <%= form_tag({controller: "drinks", action: "search"}, method: "post", class: "col s12 m10 offset-m1 center-align frm-ingredients") do %>
       <div class="row">
         <div id="bloodhound" class="col s10">
-          <input placeholder="Ingredient Name" name="ingredient" id="ingredient" type="text" class="validate" >
+          <input placeholder="e.g. Vodka" name="ingredient" id="ingredient" type="text" class="validate" >
         </div>
         <div class="col s1">
-          <a class="btn-floating btn-small waves-effect waves-light red darken-1 add-ingredients"><i class="material-icons">add</i></a>
+          <a class="btn-floating btn-small waves-effect waves-light amber accent-4 add-ingredients"><i class="material-icons">add</i></a>
         </div>
       </div>
       <div class="ingredient-list">
       </div>
 
-      <button class="btn waves-effect waves-light  light-blue darken-1" type="submit" name="action">Submit
+      <button class="btn waves-effect waves-light  deep-orange darken-4" type="submit" name="action">Submit
         <i class="material-icons right">send</i>
       </button>
     <% end %>

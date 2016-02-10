@@ -1,0 +1,18 @@
+<div class="row show-drink">
+  <div class="drink-container">
+    <div class="card z-depth-0 grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title"><%= @drink.name %></span>
+        <p><%= @drink.summary %> </p>
+        <p> <%= @drink.instructions %>
+        </div>
+        <div class="card-action">
+          <ul class="ingredients">
+            <% @drink.ingredients.each do |ingredient| %>
+            <li> <span> <%= ingredient %> </span> </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

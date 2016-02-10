@@ -1,3 +1,24 @@
 // Place all the styles related to the drinks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.collection {
+  border: 0 !important;
+}
+.search-results{
+  width: 100%;
+  .title {
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  .ingredients {
+    padding-left: 10px;
+  }
+
+}
+.show-drink {
+    width: 100%;
+    height: 100%;
+    .drink-container {
+      width:100%;
+    }
+}

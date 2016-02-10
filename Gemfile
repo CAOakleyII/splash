@@ -43,3 +43,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'twitter-typeahead-rails'
 
 gem 'httparty'
+gem 'json'

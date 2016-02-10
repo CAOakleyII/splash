@@ -1,0 +1,18 @@
+<div class="search-results">
+  <ul class="collection">
+    <% @drinks.each do |drink| %>
+    <li class="collection-item grey darken-1 avatar">
+      <a href="/drinks/<%= drink.id %>">
+        <i class="material-icons circle red">input</i>
+      </a>
+      <span class="title"> <%= drink.name %> </span>
+      <ul class="ingredients">
+        <% drink.ingredients.each do |ingredient| %>
+        <li> <span> <%= ingredient %> </span> </li>
+        <% end %>
+      </ul>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <% end %>
+  </ul>
+</div>
