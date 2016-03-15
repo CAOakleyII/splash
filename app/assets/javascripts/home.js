@@ -53,7 +53,6 @@ $(document).ready(function() {
         $(event.target.parentElement).remove();
       });
     })
-
   });
 
   function Chip(value) {
